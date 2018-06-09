@@ -12,11 +12,11 @@ npm install
 react-native link
 ```
 3. Run project
-*For IOS
+* For IOS
 ```
 react-native run-ios
 ```
-*For Android
+* For Android
 ```
 react-native run-android
 ```
@@ -24,3 +24,17 @@ react-native run-android
 ```
 react-native start
 ```
+
+## List of modules integrated in project
+* native-base
+ It is a UI component library for React Native
+* node-forge
+A native implementation of TLS and various other cryptographic tools 
+* react-native-vector-icons
+Customizable Icons for React Native
+* react-navigation
+Routing and navigation for React Native apps
+* react-redux
+React-redux is used for managing application state
+* redux-logger
+Redux is used for loging application state onto our console
