@@ -26,18 +26,12 @@ react-native start
 ```
 
 ## List of modules integrated in project
-* native-base :
- It is a UI component library for React Native
-* node-forge :
-A native implementation of TLS and various other cryptographic tools 
-* react-native-vector-icons :
-Customizable Icons for React Native
-* react-navigation :
-Routing and navigation for React Native apps
-* react-redux :
-React-redux is used for managing application state
-* redux-logger :
-Redux is used for loging application state onto our console
+* **native-base :** It is a UI component library for React Native
+* **node-forge :** A native implementation of TLS and various other cryptographic tools 
+* **react-native-vector-icons :** Customizable Icons for React Native
+* **react-navigation :** Routing and navigation for React Native apps
+* **react-redux :** React-redux is used for managing application state
+* **redux-logger :** Redux is used for loging application state onto our console
 
 ## Project folder structure explained
 ### assets
