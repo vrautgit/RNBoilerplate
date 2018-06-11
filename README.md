@@ -20,7 +20,7 @@ react-native run-ios
 ```
 react-native run-android
 ```
-4. Run packager (Only if packager didnt load automatickaly with command in step 3)
+4. Run packager (Only if packager didn't load automatickaly with command in step 3)
 ```
 react-native start
 ```
