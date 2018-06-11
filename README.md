@@ -20,7 +20,7 @@ react-native run-ios
 ```
 react-native run-android
 ```
-4. Run packager (Only if paackager didnt load automatickaly with command in step 3)
+4. Run packager (Only if packager didnt load automatickaly with command in step 3)
 ```
 react-native start
 ```
@@ -43,7 +43,7 @@ Redux is used for loging application state onto our console
 ### assets
 Contains all generic stylesheets, images, fonts or static resources etc.
 ### components
-Contain all application component of screens, navaigations, generic component
+Contain all application component of screens, navigations, generic component
 ### libs
 All applications api calls, global variables, helpers and all other generic javascript stuff goes here
 ### redux
