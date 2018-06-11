@@ -20,7 +20,7 @@ react-native run-ios
 ```
 react-native run-android
 ```
-4. Run packager (Only if packager didn't load automatickaly with command in step 3)
+4. Run package (Only if package didn't load automatickaly with command in step 3)
 ```
 react-native start
 ```
@@ -45,6 +45,6 @@ Contains all generic stylesheets, images, fonts or static resources etc.
 ### components
 Contain all application component of screens, navigations, generic component
 ### libs
-All applications api calls, global variables, helpers and all other generic javascript stuff goes here
+All applications API calls, global variables, helpers and all other generic javascript stuff goes here
 ### redux
 Application reducers, actions defination goes here
