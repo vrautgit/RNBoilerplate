@@ -5,7 +5,7 @@ const MoreNavigation = createStackNavigator({
     More: {
         screen: More,
         navigationOptions: {
-            title: 'Dashboard'
+            title: 'More'
         },
     }
 });

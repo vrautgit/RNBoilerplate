@@ -8,7 +8,6 @@ import { bindActionCreators } from 'redux';
 import mainStyles from '../../../assets/styles/MainStyles';
 import { styles } from './styles';
 import { setNavigation } from '../../../redux/actions/NavAction';
-import TabNav from '../../navigations/TabbarNavigation';
 
 class Home extends Component {
     constructor(props){

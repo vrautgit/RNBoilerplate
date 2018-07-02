@@ -18,6 +18,7 @@ class More extends Component {
     }
 
     componentDidMount(){
+        console.log('More componenrt');
     }
 
     render(){

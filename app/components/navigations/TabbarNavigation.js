@@ -6,10 +6,11 @@ import * as globals from '../../libs/globals';
 
 import DashboardNavigation from './DashboardNavigation';
 import MoreNavigation from './MoreNavigation';
+import CustomTabNavigator from '../generic/TabNavigator/_TabNavigator';
 
 const iconHeight = 30;
 
-const TabNav = createBottomTabNavigator({
+const TabNav = CustomTabNavigator({
     DashboardNavigation: {
         screen: DashboardNavigation,
         navigationOptions: {
@@ -33,7 +34,7 @@ const TabNav = createBottomTabNavigator({
             labelStyle: {
                 fontSize: 18,
                 fontWeight: 'bold',
-                paddingBottom: 5,
+                paddingBottom: 5
             },
             style: {
                 backgroundColor: globals.COLORS.primiaryColor,
@@ -46,3 +47,4 @@ const TabNav = createBottomTabNavigator({
 
 
 export default TabNav;
+

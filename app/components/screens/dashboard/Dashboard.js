@@ -23,6 +23,7 @@ class Dashboard extends Component {
     }
 
     _logout = () => {
+        console.log('logout');
         this.props.navProps.rootNavigation.navigate('Home')
     }
 
