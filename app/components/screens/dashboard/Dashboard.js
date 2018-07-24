@@ -29,7 +29,7 @@ class Dashboard extends Component {
 
     render(){
         return (
-            <View style={mainStyles.view}>
+            <View style={mainStyles.rootView}>
                 <View style={styles.btnWrap}>
                     <Button large success onPress={()=>{ this._logout() }} style={{alignSelf:'center'}}>
                         <Text>Logout</Text>

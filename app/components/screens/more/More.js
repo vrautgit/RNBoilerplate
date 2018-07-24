@@ -22,7 +22,7 @@ class More extends Component {
 
     render(){
         return(
-            <View style={mainStyles.view}>
+            <View style={mainStyles.rootView}>
                 <View style={styles.btnWrap}>
                     <Text style={{fontSize: 30}}>More Page</Text>
                 </View>

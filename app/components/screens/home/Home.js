@@ -28,7 +28,7 @@ class Home extends Component {
 
     render(){
         return (
-            <View style={mainStyles.view}>
+            <View style={mainStyles.rootView}>
                 <View style={styles.btnWrap}>
                     <Button large success onPress={()=>{ this._login() }}  style={{alignSelf:'center'}}>
                         <Text>Sign In</Text>
