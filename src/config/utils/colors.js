@@ -9,7 +9,8 @@ const colors = {
   secondary: '',
   border: '',
   background: '',
-  icon: ''
+  icon: '',
+  text: ''
 };
 
 export default colors;
