@@ -4,7 +4,9 @@
  * @package
  */
 import ScreenLayoutHoc from './appHoc';
+import { Loading } from './uiKit';
 
 export {
-  ScreenLayoutHoc
+  ScreenLayoutHoc,
+  Loading
 };

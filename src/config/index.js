@@ -8,10 +8,10 @@ import constants from './utils/constants';
 import icons from './utils/icons';
 import images from './utils/images';
 import globalStyles from './utils/globalStyles';
-import appObjects from './lib/appObjects';
-import globals from './lib/globals';
-import helpers from './lib/helpers';
-import validator from './lib/validator';
+import appObjects from './libs/appObjects';
+import * as globals from './libs/globals';
+import helpers from './libs/helpers';
+import validator from './libs/validator';
 
 export {
   colors,

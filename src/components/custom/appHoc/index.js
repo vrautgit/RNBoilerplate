@@ -5,7 +5,9 @@
  */
 import { Component } from 'react';
 import { View } from 'react-native';
+import { Loading } from '../uiKit';
 import { globalStyles } from '../../../config';
+import styles from './styles';
 
 export default (data) => (WrappedComponent) => {
   class ScreenLayoutHoc extends Component {
@@ -13,6 +15,7 @@ export default (data) => (WrappedComponent) => {
       super(props);
 
       this.state = {
+        isLoading: false,
         pageLoading: true
       };
 
@@ -32,12 +35,21 @@ export default (data) => (WrappedComponent) => {
       });
     }
 
+    setLoading = (flag) => {
+      this.setState({
+        isLoading: flag
+      });
+    }
+
     render() {
+      const { isLoading } = this.state;
       return (
-        <View>
+        <View style={styles.wrap}>
           <WrappedComponent
             {...this.props}
+            setLoading={this.setLoading}
           />
+          <Loading isLoading={isLoading} />
         </View>
       );
     }
