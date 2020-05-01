@@ -5,11 +5,19 @@
  */
 
 const constants = {
-  redux: {
-
+  reduxConst: {
+    APP_DATA_SET: 'APP_DATA_SET',
+    APP_DATA_LOADING: 'APP_DATA_LOADING',
+    APP_DATA_SUCCESS: 'APP_DATA_SUCCESS',
+    APP_DATA_ERROR: 'APP_DATA_ERROR'
   },
   routes: {
 
+  },
+  statusCodes: {
+    success: 200,
+    notFound: 404,
+    invalid: 401
   }
 };
 

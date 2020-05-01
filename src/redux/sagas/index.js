@@ -4,9 +4,11 @@
  * @package
  */
 import { all } from 'redux-saga/effects';
+import setAppDataSaga from './appDataSaga';
 
 function* rootSaga() {
   yield all([
+    setAppDataSaga()
   ]);
 }
 
