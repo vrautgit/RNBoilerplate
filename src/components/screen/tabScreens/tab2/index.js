@@ -10,7 +10,7 @@ const { routes } = constants;
 
 const Tab2 = () => (
   <Stack.Navigator>
-    <Stack.Screen name={routes.Tab2Screen1} component={Screen1} />
+    <Stack.Screen name={routes.Tab2Screen1} component={Screen1} options={{ headerShown: false }} />
   </Stack.Navigator>
 );
 

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View, Text } from 'react-native';
+import Config from "react-native-config";
 import { constants } from '../../../config';
 import { Button } from '../../custom';
 import styles from './style';
@@ -37,6 +38,7 @@ class Home extends Component {
           onPress={() => { navigation.navigate(routes.DrawerScreens); }}
           style={styles.btnStyle}
         />
+        <Text>{Config.BASE_URL}</Text>
       </View>
     );
   }
