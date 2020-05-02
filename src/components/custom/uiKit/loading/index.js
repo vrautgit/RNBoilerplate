@@ -13,7 +13,7 @@ import PropTypes from 'prop-types';
 import { colors } from '../../../../config';
 import styles from './styles';
 
-const Loader = ({ isLoading=false }) => (
+const Loader = ({ isLoading = false }) => (
   <Modal
     transparent
     visible={isLoading}

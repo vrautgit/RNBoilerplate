@@ -5,7 +5,7 @@
  */
 import * as colors from './colors';
 
-const globalStyles =  {
+const globalStyles = {
   defaultText: {
     color: colors.text,
     fontSize: 9

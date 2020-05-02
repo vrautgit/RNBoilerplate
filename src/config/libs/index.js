@@ -14,4 +14,4 @@ export {
   globals,
   helpers,
   validator
-}
+};

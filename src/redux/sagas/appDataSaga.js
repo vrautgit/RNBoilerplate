@@ -22,7 +22,7 @@ function* setAppData({ appData, promise }) {
       appData
     });
     promise.resolve();
-  } catch(err) {
+  } catch (err) {
     yield put({
       type: APP_DATA_ERROR
     });

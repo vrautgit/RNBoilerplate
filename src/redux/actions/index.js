@@ -3,4 +3,9 @@
  * all together done in this file
  * @package
  */
-export {};
+import setAppData from './appDataAction';
+
+export {
+  // eslint-disable-next-line import/prefer-default-export
+  setAppData
+};

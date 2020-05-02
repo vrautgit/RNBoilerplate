@@ -3,12 +3,13 @@
  * reuse common layout or track page analytics
  * @package
  */
-import { Component } from 'react';
-import { View } from 'react-native';
+import React, { Component } from 'react';
+import { View, Text } from 'react-native';
 import { Loading } from '../uiKit';
 import { globalStyles } from '../../../config';
 import styles from './styles';
 
+// eslint-disable-next-line no-unused-vars
 export default (data) => (WrappedComponent) => {
   class ScreenLayoutHoc extends Component {
     constructor(props) {
@@ -42,14 +43,14 @@ export default (data) => (WrappedComponent) => {
     }
 
     render() {
-      const { isLoading } = this.state;
+      const { isLoading, pageLoading } = this.state;
       return (
         <View style={styles.wrap}>
           <WrappedComponent
             {...this.props}
             setLoading={this.setLoading}
           />
-          <Loading isLoading={isLoading} />
+          <Loading isLoading={isLoading || pageLoading} />
         </View>
       );
     }

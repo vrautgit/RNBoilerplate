@@ -10,7 +10,7 @@ const LIVE = false;
  */
 const INITIAL_APP_DATA = {
 
-}
+};
 
 /**
  * Set data in key for object globally
@@ -29,4 +29,4 @@ export {
   LIVE,
   SET_APP_DATA,
   GET_APP_DATA
-}
+};

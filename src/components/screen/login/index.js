@@ -1,14 +1,11 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import styles from './style';
 
 class Login extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-
-    };
-  };
+    this.state = {};
+  }
 
   componentDidMount() {
 
@@ -16,9 +13,7 @@ class Login extends Component {
 
   render() {
     return (
-      <View>
-
-      </View>
+      <View />
     );
   }
 }

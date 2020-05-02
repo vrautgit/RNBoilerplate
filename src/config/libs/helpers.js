@@ -6,13 +6,13 @@
 /**
  * Convert array in chunk of sub-arrays
  */
-const chunkArray = (myArray, chunk_size) => {
+const chunkArray = (myArray, chunkSize) => {
   let index = 0;
   const arrayLength = myArray.length;
   const tempArray = [];
 
-  for (index = 0; index < arrayLength; index += chunk_size) {
-    const myChunk = myArray.slice(index, index + chunk_size);
+  for (index = 0; index < arrayLength; index += chunkSize) {
+    const myChunk = myArray.slice(index, index + chunkSize);
     // Do something if you want with the group
     tempArray.push(myChunk);
   }
@@ -123,4 +123,4 @@ export {
   aspectRatio,
   isEmptyObject,
   buildHeader
-}
+};

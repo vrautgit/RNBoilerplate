@@ -14,7 +14,7 @@ const setAppData = (dispatch, appData) => new Promise((resolve, reject) => {
     type: APP_DATA_SET,
     appData,
     promise: { resolve, reject }
-  })
+  });
 });
 
 export default setAppData;

@@ -10,17 +10,16 @@ import { store } from './src/redux/configureStrore';
 import Root from './src/components/screen/root';
 import { globalStyles } from './src/config';
 
-const App: () => React$Node = () => {
-  return (
-    <NavigationContainer>
-      <StatusBar barStyle="dark-content" />
-      <View style={{ ...globalStyles.flex(1) }}>
-        <Provider store={store}>
-          <Root />
-        </Provider>
-      </View>
-    </NavigationContainer>
-  );
-};
+// eslint-disable-next-line no-undef
+const App: () => React$Node = () => (
+  <NavigationContainer>
+    <StatusBar barStyle="dark-content" />
+    <View style={{ ...globalStyles.flex(1) }}>
+      <Provider store={store}>
+        <Root />
+      </Provider>
+    </View>
+  </NavigationContainer>
+);
 
 export default App;

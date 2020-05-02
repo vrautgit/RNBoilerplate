@@ -8,13 +8,11 @@ const { routes } = constants;
 
 const Drawer = createDrawerNavigator();
 
-const DrawerScreens = () => {
-  return (
-    <Drawer.Navigator>
-      <Drawer.Screen name={routes.Drawer1} component={Drawer1} />
-      <Drawer.Screen name={routes.Drawer2} component={Drawer2} />
-    </Drawer.Navigator>
-  );
-};
+const DrawerScreens = () => (
+  <Drawer.Navigator>
+    <Drawer.Screen name={routes.Drawer1} component={Drawer1} />
+    <Drawer.Screen name={routes.Drawer2} component={Drawer2} />
+  </Drawer.Navigator>
+);
 
 export default DrawerScreens;

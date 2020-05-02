@@ -18,7 +18,7 @@ class Root extends Component {
     this.state = {
 
     };
-  };
+  }
 
   componentDidMount() {
 
