@@ -1,16 +1,20 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
 import { createStackNavigator } from '@react-navigation/stack';
+import { constants } from '../../../config';
 import Home from '../home';
 import Login from '../login';
 import TabScreens from '../tabScreens';
+import DrawerScreens from '../drawerScreens';
 import styles from './style';
+
+const { routes } = constants;
 
 const Stack = createStackNavigator();
 
 class Root extends Component {
   constructor(props) {
+    super(props);
     this.state = {
 
     };
@@ -22,13 +26,14 @@ class Root extends Component {
 
   render() {
     return (
-      <NavigationContainer>
+      <View style={styles.wrap}>
         <Stack.Navigator>
-          <Stack.Screen name="Home" component={Home} />
-          <Stack.Screen name="Login" component={Login} />
-          <Stack.Screen name="TabScreens" component={TabScreens} />
+          <Stack.Screen name={routes.Home} component={Home} />
+          <Stack.Screen name={routes.Login} component={Login} />
+          <Stack.Screen name={routes.TabScreens} component={TabScreens} />
+          <Stack.Screen name={routes.DrawerScreens} component={DrawerScreens} />
         </Stack.Navigator>
-      </NavigationContainer>
+      </View>
     );
   }
 }

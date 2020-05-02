@@ -1,19 +1,20 @@
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
+import { SafeAreaView } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
+import { constants } from '../../../config';
 import Tab1 from './tab1';
 import Tab2 from './tab2';
+
+const { routes } = constants;
 
 const Tab = createBottomTabNavigator();
 
 const TabScreens = () => {
   return (
-    <NavigationContainer>
-      <Tab.Navigator>
-        <Tab.Screen name="Tab1" component={Tab1} />
-        <Tab.Screen name="Tab2" component={Tab2} />
-      </Tab.Navigator>
-    </NavigationContainer>
+    <Tab.Navigator>
+      <Tab.Screen name={routes.Tab1} component={Tab1} />
+      <Tab.Screen name={routes.Tab2} component={Tab2} />
+    </Tab.Navigator>
   );
 };
 

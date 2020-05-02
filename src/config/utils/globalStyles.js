@@ -10,13 +10,23 @@ const globalStyles =  {
     color: colors.text,
     fontSize: 9
   },
+  center: {
+    justifyContent: 'center',
+    alignItems: 'center',
+    flex: 1
+  },
 
+  flex: (num) => ({ flex: num }),
+
+  mg: (px) => ({ margin: px }),
   mgL: (px) => ({ marginLeft: px }),
   mgR: (px) => ({ marginRight: px }),
   mgT: (px) => ({ marginTop: px }),
   mgB: (px) => ({ marginBottom: px }),
   mgV: (px) => ({ marginVertical: px }),
   mgH: (px) => ({ marginHorizontal: px }),
+
+  pad: (px) => ({ padding: px }),
   padL: (px) => ({ paddingLeft: px }),
   padR: (px) => ({ paddingRight: px }),
   padT: (px) => ({ paddingTop: px }),

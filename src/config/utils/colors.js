@@ -5,12 +5,12 @@
  */
 
 const colors = {
-  primary: '',
+  primary: '#E94B3CFF',
   secondary: '',
   border: '',
   background: '',
   icon: '',
-  text: ''
+  text: '#101820FF'
 };
 
 export default colors;

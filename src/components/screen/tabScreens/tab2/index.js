@@ -1,25 +1,17 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
-import styles from './style';
+import { createStackNavigator } from '@react-navigation/stack';
+import { constants } from '../../../../config';
+import Screen1 from './screen1';
 
-class Tab2 extends Component {
-  constructor(props) {
-    this.state = {
+const Stack = createStackNavigator();
 
-    };
-  };
+const { routes } = constants;
 
-  componentDidMount() {
-
-  }
-
-  render() {
-    return (
-      <View>
-
-      </View>
-    );
-  }
-}
+const Tab2 = () => (
+  <Stack.Navigator>
+    <Stack.Screen name={routes.Tab2Screen1} component={Screen1} />
+  </Stack.Navigator>
+);
 
 export default Tab2;

@@ -4,6 +4,7 @@ import styles from './style';
 
 class Login extends Component {
   constructor(props) {
+    super(props);
     this.state = {
 
     };

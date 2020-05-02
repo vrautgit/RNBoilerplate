@@ -8,12 +8,13 @@ import { NavigationContainer } from '@react-navigation/native';
 import { Provider } from 'react-redux';
 import { store } from './src/redux/configureStrore';
 import Root from './src/components/screen/root';
+import { globalStyles } from './src/config';
 
 const App: () => React$Node = () => {
   return (
     <NavigationContainer>
       <StatusBar barStyle="dark-content" />
-      <View>
+      <View style={{ ...globalStyles.flex(1) }}>
         <Provider store={store}>
           <Root />
         </Provider>

@@ -4,7 +4,11 @@
  * @package
  */
 import Loading from './loading';
+import Button from './button';
+import Spacer from './spacer';
 
 export {
-  Loading
+  Loading,
+  Button,
+  Spacer
 };

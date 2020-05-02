@@ -8,10 +8,10 @@ const Stack = createStackNavigator();
 
 const { routes } = constants;
 
-const Tab1 = () => (
+const Drawer1 = () => (
   <Stack.Navigator>
-    <Stack.Screen name={routes.Tab1Screen1} component={Screen1} />
+    <Stack.Screen name={routes.Drawer1Screen1} component={Screen1} options={{ headerShown: false }} />
   </Stack.Navigator>
 );
 
-export default Tab1;
+export default Drawer1;

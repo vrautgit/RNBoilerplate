@@ -4,9 +4,15 @@
  * @package
  */
 import ScreenLayoutHoc from './appHoc';
-import { Loading } from './uiKit';
+import {
+  Loading,
+  Button,
+  Spacer
+} from './uiKit';
 
 export {
   ScreenLayoutHoc,
-  Loading
+  Loading,
+  Button,
+  Spacer
 };
