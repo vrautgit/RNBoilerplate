@@ -12,7 +12,7 @@ import { globalStyles } from './src/config';
 
 // eslint-disable-next-line no-undef
 const App: () => React$Node = () => (
-  <NavigationContainer>
+  <NavigationContainer dcaTest="NavigationContainer">
     <StatusBar barStyle="dark-content" />
     <View style={{ ...globalStyles.flex(1) }}>
       <Provider store={store}>
