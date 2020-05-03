@@ -2,49 +2,56 @@
 This is a boilerplate for react-native project
 
 ## Installation Steps
-### For IOS and Android
-1. Install all npm modules
-```
-npm install
-```
-2. Link all npm modules to native modules
-```
-react-native link
-```
-3. Run project
-* For IOS
-```
-react-native run-ios
-```
-* For Android
-```
-react-native run-android
-```
-4. Run package (Only if package didn't load automatickaly with command in step 3)
-```
-react-native start
-```
+1. Npm install: ````npm i````
+2. Start packager: ````npx react-native start````
+3. Android build: ````npm run android [dev/stage/prod]````
+4. IOS build: ````npm run ios [dev/stage/prod]````
+
+## Features
+1. **Code validation**:
+    - Code validation using eslint
+    - Command: ```npm lint```
+2. **Test cases**:
+    - Test cases configuration using Jest and enzyme
+    - Added test cases for App.js for reference
+    - Command:
+        - ```npm test```
+        - ```npm test:watch```
+    - Test cases mock for:
+        - react-native-gesture-handler
+        - react-navigation
+3. **Predefined custom components**:
+    - Button
+    - Spacer
+    - Loading
+4. **Higher order components**: appHoc component for layout manager on scrren
+5. **Navigation structure**:
+    - Root stack nvigation setup
+    - Tab and inner stack nvigation setup
+    - Drawer and inner stack nvigation setup
+6. **Redux Setup**:
+    - Redux folder structure setup
+    - redux-saga middleware setup
+    - redux-logger middleware setup
+    - appData action, saga and reducer added
+7. **Config**:
+    - Libs:
+        - appObjects: Common/shared objects
+        - enzymeConfig: Enzyme configuration for test cases
+        - globals: App global configuration
+        - helpers: Predefined helpers function added chunkArray, strToKey,manualDelay,dateWithoutTime,aspectRatio,isEmptyObject,buildHeader
+        - validator: App genereic validator
+    - Utils: App Static utils such as
+        - colors
+        - constants
+        - globalStyles
+        - icons
+        - images
 
 ## List of modules integrated in project
-* [native-base](https://nativebase.io/) :
-It is a UI component library for React Native
-* [node-forge](https://www.npmjs.com/package/node-forge) : 
-A native implementation of TLS and various other cryptographic tools 
-* [react-native-vector-icons](https://github.com/oblador/react-native-vector-icons) : 
-Customizable Icons for React Native
-* [react-navigation](https://reactnavigation.org/) : 
+* [react-navigation](https://reactnavigation.org/) :
 Routing and navigation for React Native apps
 * [react-redux](https://redux.js.org/basics/usage-with-react) :
 React-redux is used for managing application state
 * [redux-logger](https://github.com/evgenyrodionov/redux-logger) :
 Redux is used for loging application state onto our console
-
-## Project folder structure explained
-### assets
-Contains all generic stylesheets, images, fonts or static resources etc.
-### components
-Contain all application component of screens, navigations, generic component
-### libs
-All applications API calls, global variables, helpers and all other generic javascript stuff goes here
-### redux
-Application reducers, actions defination goes here
