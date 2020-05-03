@@ -35,18 +35,24 @@ This is a boilerplate for react-native project
     - redux-logger middleware setup
     - appData action, saga and reducer added
 7. **Config**:
-    - Libs:
+    - **Libs:**
         - appObjects: Common/shared objects
         - enzymeConfig: Enzyme configuration for test cases
         - globals: App global configuration
         - helpers: Predefined helpers function added chunkArray, strToKey,manualDelay,dateWithoutTime,aspectRatio,isEmptyObject,buildHeader
         - validator: App genereic validator
-    - Utils: App Static utils such as
+    - **Utils:** App Static utils such as
         - colors
         - constants
         - globalStyles
         - icons
         - images
+8. **Env**:
+    - react-native-config module configured
+9. **buildScripts**:
+    - **androidBuild**: sh script for android build
+    - **iosBuild**: sh script for android build
+    - **switchEnv**: sh script for changing the build environment
 
 ## List of modules integrated in project
 * [react-navigation](https://reactnavigation.org/) :
