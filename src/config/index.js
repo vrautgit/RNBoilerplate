@@ -10,7 +10,7 @@ import images from './utils/images';
 import globalStyles from './utils/globalStyles';
 import appObjects from './libs/appObjects';
 import * as globals from './libs/globals';
-import helpers from './libs/helpers';
+import * as helpers from './libs/helpers';
 import validator from './libs/validator';
 
 export {

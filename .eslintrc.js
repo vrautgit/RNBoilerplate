@@ -9,7 +9,8 @@ module.exports = {
         'react/jsx-filename-extension': 'off',
         'react/prop-types': 'off',
         'comma-dangle': 'off',
-        'react/jsx-props-no-spreading': 'off'
+        'react/jsx-props-no-spreading': 'off',
+        'no-async-promise-executor': 'off'
     },
     'globals': {
         "fetch": false
