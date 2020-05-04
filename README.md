@@ -53,6 +53,9 @@ This is a boilerplate for react-native project
     - **androidBuild**: sh script for android build
     - **iosBuild**: sh script for android build
     - **switchEnv**: sh script for changing the build environment
+10. **Api request handler**:
+    - Used axios library to handle api request
+    - Created generic api request handler for centralised api calling
 
 ## List of modules integrated in project
 * [react-navigation](https://reactnavigation.org/) :
