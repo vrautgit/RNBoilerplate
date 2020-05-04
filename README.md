@@ -10,6 +10,7 @@ This is a boilerplate for react-native project
 ## Features
 1. **Code validation**:
     - Code validation using eslint
+    - Used airbnb code standard for code validation
     - Command: ```npm lint```
 2. **Test cases**:
     - Test cases configuration using Jest and enzyme
@@ -64,3 +65,11 @@ Routing and navigation for React Native apps
 React-redux is used for managing application state
 * [redux-logger](https://github.com/evgenyrodionov/redux-logger) :
 Redux is used for loging application state onto our console
+* [redux-saga](https://redux-saga.js.org/) :
+Redux saga is used for asynchromous operations in redux actions
+* [axios](https://github.com/axios/axios) :
+Axois is used for api calling
+* [enzyme](https://enzymejs.github.io/enzyme/) :
+Enzyme is used for writing test cases with react
+* [react-native-config](https://github.com/luggit/react-native-config) :
+React native confige is used for getting values from .env file
