@@ -3,7 +3,7 @@
  * all together done in the file
  * @package
  */
-import ScreenLayoutHoc from './appHoc';
+import ScreenLayoutHoc from './AppHoc';
 import {
   Loading,
   Button,

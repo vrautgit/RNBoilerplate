@@ -1,8 +1,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { constants } from '../../../config';
-import Tab1 from './tab1';
-import Tab2 from './tab2';
+import Tab1 from './Tab1';
+import Tab2 from './Tab2';
 
 const { routes } = constants;
 

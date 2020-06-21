@@ -1,8 +1,8 @@
 import React from 'react';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { constants } from '../../../config';
-import Drawer1 from './drawer1';
-import Drawer2 from './drawer2';
+import Drawer1 from './Drawer1';
+import Drawer2 from './Drawer2';
 
 const { routes } = constants;
 

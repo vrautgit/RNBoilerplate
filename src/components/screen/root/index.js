@@ -2,10 +2,10 @@ import React, { Component } from 'react';
 import { View } from 'react-native';
 import { createStackNavigator } from '@react-navigation/stack';
 import { constants } from '../../../config';
-import Home from '../home';
-import Login from '../login';
-import TabScreens from '../tabScreens';
-import DrawerScreens from '../drawerScreens';
+import Home from '../Home';
+import Login from '../Login';
+import TabScreens from '../TabScreens';
+import DrawerScreens from '../DrawerScreens';
 import styles from './style';
 
 const { routes } = constants;

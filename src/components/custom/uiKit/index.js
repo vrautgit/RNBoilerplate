@@ -3,9 +3,9 @@
  * all together done in the file
  * @package
  */
-import Loading from './loading';
-import Button from './button';
-import Spacer from './spacer';
+import Loading from './Loading';
+import Button from './Button';
+import Spacer from './Spacer';
 
 export {
   Loading,
