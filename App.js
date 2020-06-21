@@ -10,7 +10,6 @@ import { store } from './src/redux/configureStrore';
 import Root from './src/components/screen/Root';
 import { globalStyles } from './src/config';
 
-// eslint-disable-next-line no-undef
 const App: () => React$Node = () => (
   <NavigationContainer dcaTest="NavigationContainer">
     <StatusBar barStyle="dark-content" />
