@@ -6,15 +6,15 @@
 /**
  * Validate data of login page
  */
-const login = () => new Promise((resolve) => {
-  resolve();
+const login = (): Promise<number> => new Promise((resolve) => {
+  resolve(1);
 });
 
 /**
  * Validate data of register page
  */
-const register = () => new Promise((resolve) => {
-  resolve();
+const register = (): Promise<number> => new Promise((resolve) => {
+  resolve(1);
 });
 
 export {

@@ -12,6 +12,7 @@ import appObjects from './libs/appObjects';
 import * as globals from './libs/globals';
 import * as helpers from './libs/helpers';
 import validator from './libs/validator';
+import * as commondTypes from './commondTypes';
 
 export {
   colors,
@@ -22,5 +23,6 @@ export {
   appObjects,
   globals,
   helpers,
-  validator
+  validator,
+  commondTypes
 };

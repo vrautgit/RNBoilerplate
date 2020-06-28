@@ -1,3 +1,6 @@
+import * as T from './types';
+import * as CT from '../../commondTypes';
+
 /**
  * @fileoverview Generic app helper function
  * @package
@@ -6,7 +9,7 @@
 /**
  * Convert array in chunk of sub-arrays
  */
-const chunkArray = (myArray, chunkSize) => {
+const chunkArray = (myArray: any[], chunkSize: number): any[] => {
   let index = 0;
   const arrayLength = myArray.length;
   const tempArray = [];
@@ -25,8 +28,8 @@ const chunkArray = (myArray, chunkSize) => {
  * for the components
  * @param {string} str is a string which to be converted as a kwy
  */
-const strToKey = (str) => {
-  if (!str) return String(newStr);
+const strToKey = (str: string): string => {
+  if (!str) return String(str);
 
   let newStr = '';
   const arr = str.split(' ');
@@ -39,9 +42,9 @@ const strToKey = (str) => {
  * Function is used to delay execution of next line by time
  * @param {int} time is number in milisecconds
  */
-const manualDelay = (time) => new Promise((resolve) => {
+const manualDelay = (time?: number): Promise<number> => new Promise<number>((resolve) => {
   setTimeout(() => {
-    resolve();
+    resolve(1);
   }, time || 500);
 });
 
@@ -50,11 +53,11 @@ const manualDelay = (time) => new Promise((resolve) => {
  * Function give pure date and restore time in provided timestamp
  * @param {str} str is timestamp string
  */
-const dateWithoutTime = (str) => {
-  let d = new Date(str);
+const dateWithoutTime = (str: string): number => {
+  const d: Date = new Date(str);
   d.setHours(0, 0, 0, 0);
-  d = d.getTime();
-  return d;
+  const time = d.getTime();
+  return time;
 };
 
 /**
@@ -62,7 +65,7 @@ const dateWithoutTime = (str) => {
  * @param {int} val is division of image as => width/height
  * @param {int} lim limit of ratio of image
  */
-const aspectRatio = (val, lim) => {
+const aspectRatio = (val: number, lim: number): number[] => {
   let lower = [0, 1];
   let upper = [1, 0];
 
@@ -95,7 +98,7 @@ const aspectRatio = (val, lim) => {
 /**
  * Check if object is empty
  */
-const isEmptyObject = (obj) => {
+const isEmptyObject = (obj: CT.MetaObj): boolean => {
   if (!obj) {
     return true;
   }
@@ -105,9 +108,9 @@ const isEmptyObject = (obj) => {
 /**
  * Changing app header key or adding key's to header for api request
  */
-const buildHeader = (headerParams = {}) => {
+const buildHeader = (headerParams: CT.ApiHeader = {}): CT.ApiHeader => {
   let header = {
-    Accept: 'application/json',
+    'Accept': 'application/json',
     'Content-Type': 'application/json',
     'Cache-Control': 'no-cache',
   };

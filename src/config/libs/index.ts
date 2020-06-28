@@ -5,9 +5,9 @@
  */
 
 import appObjects from './appObjects';
-import globals from './globals';
-import helpers from './helpers';
-import validator from './validator';
+import * as globals from './globals';
+import * as helpers from './helpers';
+import * as validator from './validator';
 
 export {
   appObjects,
